@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+        #home img{
+            width: 300px;
+        }
+        /* gallery  section style */
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 300px;
+            height: auto;
+        }
+        .gallery .beach{
+            width: 278px;
+            margin-left: 3px;
+            margin-right: 0px;
+        }
+        /* menu section style */
+        .rows{
+            display: flex;
+            align-items: center;
+            position: relative;
+        }
+        .col ul{
+            display: inline flex;
+            flex-wrap: wrap;
+            list-style: none;
+        }
+        .col img{
+            width: 300px;
+            padding-inline: 5px; /*to create space inbetween the images*/
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Image Links</h1>
+        <p>Explore our collection of images linked to various topics!</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#gallery">Gallery</a> |
+        <a href="#menu">Menu</a>
+    </nav>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to our homepage! Check out this cool technology image:</p>
+        <img src="tech-images.jpg" alt="Technology">
+        <a href="https://www.pexels.com/search/technology/"target="_blank"><br>Technology</a>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Images of different aspect of the beauty of nature</p>
+        <div class="gallery">
+                <img src="nature gallery/beach.jpg" alt="beach" class="beach">
+                <img src="nature gallery/bird.jpg" alt="bird">
+                <img src="nature gallery/bridge.jpg" alt="bridge">
+                <img src="nature gallery/butterflies.jpg" alt="butterflies">
+                <a href="https://unsplash.com/s/photos/nature-images" target="_blank">nature</a>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <p>List of various food items that are consumed by humans</p>
+        <div class="rows">
+            <div class="col">
+                <ul>
+                    <li>
+                        <img src="food items/burger.webp" alt="">
+                        <img src="food items/dried nuts.jpg" alt="">
+                        <img src="food items/fresh tomatoes.webp" alt="">
+                        <img src="food items/rice.jpg" alt="">
+                        <a href="https://www.google.com/search?q=food+items" target="_blank"><br>food items</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+       
+    </section>
+</body>
+
+</html>
