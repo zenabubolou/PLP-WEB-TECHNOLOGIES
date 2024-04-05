@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction</title>
+    <style>
+        * body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        header{
+            background-color: rgb(9, 51, 5);
+            color: antiquewhite;
+            padding-left: 7px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+
+        }
+        .intro {
+            background-color: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 2px solid black;
+        }
+        .skill {
+            padding: 20px;
+        }
+        .skill h2{
+            margin-bottom: 9px;
+        }
+        .skill ul{
+            list-style: none;
+            padding: 0; /*to align list element to the left*/
+        
+        }
+        .skill ul li{
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+        .contact {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        @media only screen and (max-width: 600px){
+            .intro, .skill, .contact{
+                padding: 10px;
+            }
+            .skill ul li{
+                margin-bottom: 5px;
+            }
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Zenabu Bolou</h1>
+    </header>
+    <section class="intro">
+        <h2>Introduction</h2>
+        <p>My name is Zenabu Bolou. I am a web developer and a network engineer.</p>
+        <p>I love my job and am very happy.</p>
+    </section>
+    <section class="skill">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>PYTHON</li>
+        </ul>
+    </section>
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Email: zenabubolou@gmail.com</p>
+        <p>
+            <a href="#">linkedin</a>
+            <a href="#">facebook</a>
+        </p>
+    </section>
+    
+</body>
+</html>
